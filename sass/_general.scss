@@ -1,0 +1,36 @@
+*,
+*::after, 
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 400; /* Normal font */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color:#F9F9F9;
+}
+
+.site-main {
+    flex-grow: 1;
+}
+
+img {
+    display: block;
+}
+
+.list-unstyled {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}

@@ -1,0 +1,55 @@
+.hero {
+    padding-top: 145px;
+    padding-bottom: 311px;
+    background-image: url("../../images/img/herobackimg.png"), url("../../images/img/herosecondimg.png");
+    background-size: 870px 834px 350px 430px;
+    background-position: calc(50% - 400px) top, calc(50% + 650px) calc(50% + 200px);
+    background-repeat: no-repeat no-repeat;
+
+    &__inner {
+        max-width: 608px;
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    &__title {
+        margin-top: 0;
+        margin-bottom: 29px;
+        color: $main-color;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+    
+    &__title--color {
+        color: $fourth-color;
+    }
+    
+    &__desc-inner {
+        max-width: 495px;
+        width: 100%;
+    }
+    
+    &__desc {
+        margin-top: 0;
+        margin-bottom: 38px;
+        color: $secondary-color;
+        font-weight: 400;
+        line-height: 21px; /* 131.25% */
+    }
+    
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 181px;
+        min-height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        color: $third-color;
+        background-color: $main-color;
+        text-decoration: none;
+    }
+}
+
