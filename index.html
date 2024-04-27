@@ -6,6 +6,7 @@
     <meta name="author" content="Zoyidjon Nasretdinov">
     <title>Vetclinic</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -69,7 +70,7 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
-                    <h1 class="hero__title">Мы заботимся о <span class="hero__title--color">ваших питомцах!</span></h1>
+                    <h1 class="hero__title" title="Мы заботимся o ваших питомцах!">Мы заботимся о <span class="hero__title--color">ваших питомцах!</span></h1>
                     <div class="hero__desc-inner">
                         <p class="hero__desc">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
                     </div>
@@ -87,26 +88,43 @@
         <section class="service">
             <div class="container">
                 <h2 class="service__title">Наши услуги</h2>
-                <ol class="service__list list-unstyled">
-                    <li class="service__item service__item--active">
-                        <h3 class="service__item-title">Первичный осмотр</h3>
-                    </li>
-                    <li class="service__item">
-                        <h3 class="service__item-title">Первичный осмотр</h3>
-                    </li>
-                    <li class="service__item">
-                        <h3 class="service__item-title">Хирургическое вмешательство</h3>
-                    </li>
-                    <li class="service__item">
-                        <h3 class="service__item-title">Дерматология</h3>
-                    </li>
-                    <li class="service__item">
-                        <h3 class="service__item-title">Лабораторная диагностика</h3>
-                    </li>
-                    <li class="service__item">
-                        <h3 class="service__item-title">Офтальмология</h3>
-                    </li>
-                </ol>
+                <div class="service__carusel-inner carusel">
+                    <ol class="service__list list-unstyled">
+                        <li class="service__item">
+                            <h3 class="service__item-title">Первичный осмотр</h3>
+                        </li>
+                        <li class="service__item">
+                            <h3 class="service__item-title">Первичный осмотр</h3>
+                        </li>
+                        <li class="service__item">
+                            <h3 class="service__item-title">Хирургическое вмешательство</h3>
+                        </li>
+                        <li class="service__item">
+                            <h3 class="service__item-title">Дерматология</h3>
+                        </li>
+                        <li class="service__item">
+                            <h3 class="service__item-title">Лабораторная диагностика</h3>
+                        </li>
+                        <li class="service__item">
+                            <h3 class="service__item-title">Офтальмология</h3>
+                        </li>
+                    </ol>
+                    <button class="service__carusel-btn left-btn"></button>
+                    <button class="service__carusel-btn rigth-btn"></button>
+                    <div class="carusel__item-inner">
+                        <div class="carusel__inner-left">
+                            <img src="./images/img/cat.png" width="524" height="332" alt="">
+                        </div>
+                        <div class="carusel__inner-rigth">
+                            <h4 class="carusel__item-title">Первичный осмотр</h4>
+                            <p class="carusel__item-desc">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+                            <p class="carusel__item-desc">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+                            <div class="carusel__item-links">
+                                <a href="" class="carusel__item-price">Узнать цену</a><a href="" class="carusel__item-appointment">Записаться на приём</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
