@@ -1,0 +1,91 @@
+.site-footer {
+    padding-top: 54px;
+    padding-bottom: 69px;
+    border: 1px solid #ebebeb;
+    background-color: #f3f3f3;
+    
+    &__inner {
+        display: flex;
+    }
+    
+    &__logo-inner {
+        margin-right: 67px;
+    }
+    
+    &__address {
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    &__nav-inner {
+        display: flex;
+        margin-right: 157px;
+    }
+    
+    &__nav-list {
+        @include list-unstyled;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    &__nav-list:nth-child(1) {
+        margin-right: 87px;
+    }
+    
+    
+    &__nav-link {
+        color: #333;
+        font-weight: 500;
+        text-decoration: none;
+    } 
+    
+    .site-address__date-list {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 137px;
+        &::before {
+            position: absolute;
+            top: 4px;
+            left: -30px;
+        }
+    }
+    
+    &__location-wrapper {
+        position: relative;
+        width: 240px;
+        
+        .site-address__location {
+            
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -25px;
+                content: ""
+            }
+        }
+    }
+    
+    &__phone-list {
+        @include list-unstyled;
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 4px;
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -25px;
+            width: 16px;
+            height: 16px;
+            background-image: url(../../images/icons/phone.svg);
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+        }
+    }
+    
+}
